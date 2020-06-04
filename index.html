@@ -6,9 +6,52 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Dating Quiz</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1 class="jumbotron"></h1>
+    <form id="form">
+      <p>Please select which color you prefer:</p>
+      <div>
+        <input type="radio" id="radioChoice1" name="color" value="purple" checked>
+        <label for="radioChoice1">Purple</label>
+      </div>
+      <div>
+        <input type="radio" id="radioChoice2" name="color" value="platypus">
+        <label for="radioChoice2">Green</label>
+      </div>
+      <div>
+        <input type="radio" id="radioChoice3" name="color" value="mantisShrimp">
+        <label for="radioChoice3"></label>
+      </div>
+      <p>Please select your favorite pet:</p>
+      <div>
+        <input type="radio" id="radioChoice1" name="pet" value="dog" checked>
+        <label for="radioChoice1">Dog</label>
+      </div>
+      <div>
+        <input type="radio" id="radioChoice2" name="pet" value="cat">
+        <label for="radioChoice2">Cat</label>
+      </div>
+      <div>
+        <input type="radio" id="radioChoice3" name="pet" value="goldFish">
+        <label for="radioChoice3">Gold fish</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="rick" class="hidden">
+      <h5>Your ideal date is Rick:</h5>
+      <img src="" alt="">
+    </div>
+    <div id="morty" class="hidden">
+      <h5>Your ideal date is Morty:</h5>
+      <img src="" alt="">
+    </div>
+    <div id="jerry" class="hidden">
+      <h5>Your ideal date is Jerry:</h5>
+      <img src="" alt="">
+    </div>
+  </div>
 </body>
 </html>
