@@ -1,20 +1,21 @@
 $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
-    const input = $("input:radio[name=animal]:checked").val();
+    const color = $("input:radio[name=color]:checked").val();
+    const pet = $("input:radio[name=pet]:checked").val(); 
 
-    if (input === "goat") {
-      $(".hidden#platypus").hide();
-      $(".hidden#mantisShrimp").hide();
-      $(".hidden#goat").show();
-    } else if (input === "platypus") {
-      $(".hidden#goat").hide();
-      $(".hidden#mantisShrimp").hide();
-      $(".hidden#platypus").show();
+    if (color === "red" && pet === "goldFish" || color === "red" && pet === "dog") {
+      $(".hidden#rick").hide();
+      $(".hidden#morty").hide();
+      $(".hidden#jerry").show();
+    } else if (color === "green" && pet === "dog" || color === "green" && pet === "cat") {
+      $(".hidden#rick").hide();
+      $(".hidden#jerry").hide();
+      $(".hidden#morty").show();
     } else {
-      $(".hidden#goat").hide();
-      $(".hidden#platypus").hide();
-      $(".hidden#mantisShrimp").show();
+      $(".hidden#morty").hide();
+      $(".hidden#jerry").hide();
+      $(".hidden#rick").show();
     }
   });
 });
